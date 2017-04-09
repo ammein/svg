@@ -1,0 +1,23 @@
+svg {
+  position:absolute;
+  top: 0;
+  right :0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+}
+  
+  .square {
+    stroke-dasharray:650;
+    stroke-dashoffset:-650;
+    animation:draw-square 1s infinite;
+  }
+
+@keyframes draw-square {
+  from {
+    stroke-dashoffset: -650;
+  }
+  to {
+    stroke-dashoffset:0;
+  }
+}
